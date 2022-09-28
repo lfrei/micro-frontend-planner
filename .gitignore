@@ -1,0 +1,8 @@
+node_modules
+dist
+
+portal/node_modules
+portal/dist
+
+task/node_modules
+task/dist
