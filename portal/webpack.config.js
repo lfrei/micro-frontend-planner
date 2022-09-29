@@ -33,7 +33,14 @@ module.exports = {
         task: `task@http://localhost:3002/remoteEntry.js`,
         event: `event@http://localhost:3003/remoteEntry.js`,
       },
-      shared: { react: { singleton: true }, 'react-dom': { singleton: true } },
+      shared: { 
+        react: { 
+          singleton: true 
+        }, 
+        'react-dom': { 
+          singleton: true 
+        } 
+      },
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
