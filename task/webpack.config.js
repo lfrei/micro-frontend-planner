@@ -33,6 +33,7 @@ module.exports = {
       filename: 'remoteEntry.js',
       exposes: {
         './TaskList': './src/TaskList',
+        './TaskWidget': './src/TaskWidget',
       },
       shared: { 
         'react': { singleton: true }, 

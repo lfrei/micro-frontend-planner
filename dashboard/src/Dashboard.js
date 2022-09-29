@@ -1,16 +1,20 @@
 import React from 'react';
 
-const TaskList = React.lazy(() => import('task/TaskList'));
-const EventList = React.lazy(() => import('event/EventList'));
+const TaskWidget = React.lazy(() => import('task/TaskWidget'));
+const EventWidget = React.lazy(() => import('event/EventWidget'));
 
 const Dashboard = () => (
   <div>
-    <React.Suspense fallback="Loading Tasks List...">
-        <TaskList />
-    </React.Suspense>
-    <React.Suspense fallback="Loading Event List...">
-        <EventList />
-    </React.Suspense>
+    <div>
+        <React.Suspense fallback="Loading Task Widget...">
+            <TaskWidget />
+        </React.Suspense>
+    </div>
+    <div>
+        <React.Suspense fallback="Loading Event Widget...">
+            <EventWidget />
+        </React.Suspense>
+    </div>
   </div>
 );
 

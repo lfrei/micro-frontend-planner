@@ -33,6 +33,7 @@ module.exports = {
       filename: 'remoteEntry.js',
       exposes: {
         './EventList': './src/EventList',
+        './EventWidget': './src/EventWidget',
       },
       shared: { 
         'react': { singleton: true }, 
