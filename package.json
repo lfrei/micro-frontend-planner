@@ -4,7 +4,8 @@
     "packages": [
       "portal",
       "task",
-      "event"
+      "event",
+      "dashboard"
     ]
   },
   "scripts": {

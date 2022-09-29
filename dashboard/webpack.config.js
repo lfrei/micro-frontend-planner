@@ -9,7 +9,7 @@ module.exports = {
     static: {
       directory: path.join(__dirname, 'dist'),
     },
-    port: 3003,
+    port: 3004,
   },
   output: {
     publicPath: 'auto',
@@ -28,11 +28,14 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'event',
-      library: { type: 'var', name: 'event' },
+      name: 'dashboard',
       filename: 'remoteEntry.js',
       exposes: {
-        './EventList': './src/EventList',
+        './Dashboard': './src/Dashboard',
+      },
+      remotes: {
+        task: `task@http://localhost:3002/remoteEntry.js`,
+        event: `event@http://localhost:3003/remoteEntry.js`,
       },
       shared: { 
         'react': { singleton: true }, 

@@ -32,6 +32,7 @@ module.exports = {
       remotes: {
         task: `task@http://localhost:3002/remoteEntry.js`,
         event: `event@http://localhost:3003/remoteEntry.js`,
+        dashboard: `dashboard@http://localhost:3004/remoteEntry.js`,
       },
       shared: { 
         'react': { singleton: true }, 

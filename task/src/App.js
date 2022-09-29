@@ -1,5 +1,5 @@
-import TaskList from './TaskList';
 import React from 'react';
+import TaskList from './TaskList';
 
 const App = () => (
   <div>

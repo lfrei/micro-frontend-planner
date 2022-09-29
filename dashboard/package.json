@@ -1,5 +1,5 @@
 {
-  "name": "@planner/portal",
+  "name": "@planner/dashboard",
   "version": "0.0.0",
   "private": true,
   "devDependencies": {
@@ -15,12 +15,11 @@
   "scripts": {
     "start": "webpack-cli serve",
     "build": "webpack --mode production",
-    "serve": "serve dist -p 3001",
+    "serve": "serve dist -p 3004",
     "clean": "rm -rf dist"
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.1"
+    "react-dom": "^18.2.0"
   }
 }

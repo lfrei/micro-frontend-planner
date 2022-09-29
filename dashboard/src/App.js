@@ -1,10 +1,10 @@
 import React from 'react';
-import EventList from './EventList';
+import Dashboard from './Dashboard';
 
 const App = () => (
   <div>
-    <h1>Events</h1>
-    <EventList />
+    <h1>Dashboard</h1>
+    <Dashboard />
   </div>
 );
 

@@ -5,6 +5,7 @@ import {
     Link
   } from "react-router-dom";
 
+const Dashboard = React.lazy(() => import('dashboard/Dashboard'));
 const TaskList = React.lazy(() => import('task/TaskList'));
 const EventList = React.lazy(() => import('event/EventList'));
 
@@ -33,6 +34,7 @@ const Main = () => (
         </ul>
     </nav>
     <Routes>
+        <Route path="/" element={renderMFE(Dashboard)} />
         <Route path="task" element={renderMFE(TaskList)} />
         <Route path="event" element={renderMFE(EventList)} />
     </Routes>

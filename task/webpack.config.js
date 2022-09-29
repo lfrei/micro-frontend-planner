@@ -34,7 +34,10 @@ module.exports = {
       exposes: {
         './TaskList': './src/TaskList',
       },
-      shared: { react: { singleton: true }, 'react-dom': { singleton: true } },
+      shared: { 
+        'react': { singleton: true }, 
+        'react-dom': { singleton: true }
+      },
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
