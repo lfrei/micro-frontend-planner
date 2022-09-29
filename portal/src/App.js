@@ -1,22 +1,11 @@
-import React from 'react';
-
-const RemoteTaskList = React.lazy(() => import('task/TaskList'));
-const RemoteEventList = React.lazy(() => import('event/EventList'));
+import React from "react";
+import {BrowserRouter as Router} from "react-router-dom";
+import Main from "./Main";
 
 const App = () => (
-  <div>
-    <h1>Portal</h1>
-    <React.Suspense fallback="Loading Task List">
-      <div>
-        <RemoteTaskList />
-      </div>
-    </React.Suspense>
-    <React.Suspense fallback="Loading Event List">
-      <div>
-        <RemoteEventList />
-      </div>
-    </React.Suspense>
-  </div>
+  <Router>
+    <Main></Main>
+  </Router>
 );
 
 export default App;
